@@ -11,13 +11,14 @@ The hashing works incremental and looks at the file-names in `public/assets` so 
 4. renames assets referenced in `css-urls` to their new name
 5. renames sourcemaps (this will be probably removed)
 6. write file-mapping and image-sizes to `../asset-manifest.json`
-    ````
+
+   ```json
     "img/btn_reset.png": {
         "url": "img/btn_reset-cd43a189.png",
         "imgSize": [67, 22]   
     }
     ...
-   ````
+   ```
 
 ##### Problems:
 * Breaks css auto-reload (will fix that)
