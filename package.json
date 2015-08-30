@@ -1,0 +1,32 @@
+{
+  "author": "Fabian Zeindl <fabian.zeindl@gmail.com>",
+  "name": "hash-brunch",
+  "description": "brunch-plugin for asset-hashing and digest-generation",
+  "version": "0.0.1",
+  "license": "LGPL-2.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fab1an/hash-brunch.git"
+  },
+  "main": "lib/hash-brunch.js",
+  "scripts": {
+    "prepublish": "make build",
+    "postpublish": "git push"
+  },
+  "keywords": [
+    "brunch",
+    "asset",
+    "hash",
+    "digest"
+  ],
+  "devDependencies": {
+    "coffee-script": "~1.9.0"
+  },
+  "dependencies": {
+    "glob": "^5.0.10",
+    "image-size": "^0.3.5"
+  },
+  "bugs": {
+    "url": "https://github.com/fab1an/hash-brunch/issues"
+  }
+}
