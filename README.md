@@ -50,4 +50,5 @@ License
 LGPL-2.1
 
 [Brunch]: http://brunch.io
+
 [PageSpeed]: https://developers.google.com/speed/docs/insights/OptimizeImages
