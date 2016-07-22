@@ -2,7 +2,7 @@
   "author": "Fabian Zeindl <fabian.zeindl@gmail.com>",
   "name": "hash-brunch",
   "description": "brunch-plugin for asset-hashing and digest-generation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "LGPL-2.1",
   "repository": {
     "type": "git",

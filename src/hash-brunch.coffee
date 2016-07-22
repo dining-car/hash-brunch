@@ -17,7 +17,9 @@ module.exports = class HashBrunch
     # Defaults options
     @options = {
       precision: 8,
-      assetFolder: "app/assets"
+      assetFolder: "app/assets",
+      environments: ["production"],
+      alwaysRun: false
     }
 
     # Merge config
@@ -39,7 +41,12 @@ module.exports = class HashBrunch
     shasum.update(data)
     shasum.digest('hex')[0..@options.precision-1]
 
+  _shouldRun: ->
+    return (@config.env[0] in @options.environments) or @options.alwaysRun
+
   onCompile: (generatedFiles) ->
+    return unless @_shouldRun()
+
     @publicFolder = @config.paths.public
 
     # 1. clean public folder
