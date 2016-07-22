@@ -2,11 +2,11 @@
   "author": "Fabian Zeindl <fabian.zeindl@gmail.com>",
   "name": "hash-brunch",
   "description": "brunch-plugin for asset-hashing and digest-generation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "LGPL-2.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/fab1an/hash-brunch.git"
+    "url": "git://github.com/dining-car/hash-brunch.git"
   },
   "main": "lib/hash-brunch.js",
   "scripts": {
@@ -27,6 +27,6 @@
     "image-size": "^0.3.5"
   },
   "bugs": {
-    "url": "https://github.com/fab1an/hash-brunch/issues"
+    "url": "https://github.com/dining-car/hash-brunch/issues"
   }
 }
